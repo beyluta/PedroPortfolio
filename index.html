@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Chango&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="adjustBehaviour.js"></script>
+    <script src="mobileQueryScript.js"></script>
 </head>
 
 <body style="margin: 0px; padding: 0px; background-color: #F7F8FC; position: relative;">
@@ -146,7 +146,7 @@
                         <span style="color: #007BFF; font-weight: bolder">✓ </span>Made using JQuery</p>
 
                     <!-- Demo / Visit Website -->
-                    <div class="demo-button">
+                    <div class="demo-button" onclick="webNotAvailable()">
                         <p
                             style="font-family: 'Muli', sans-serif; color: white; font-size: 14px; position: absolute; top: 22%;left: 50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
                             Visit Website</p>
@@ -176,14 +176,15 @@
                         <span style="color: #007BFF; font-weight: bolder">✓ </span>Made using Javascript</p>
                     <p style="font-family: 'Muli', sans-serif; color: dimgray; text-align: left; margin-left: 25px">
                         <span style="color: #007BFF; font-weight: bolder">✓ </span>Made using JQuery</p>
-                    <div class="demo-button">
+                    <div class="demo-button" onclick="location.href='index.html'">
                         <p
                             style="font-family: 'Muli', sans-serif; color: white; font-size: 14px; position: absolute; top: 22%;left: 50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
                             Visit Website</p>
                     </div>
 
                     <!-- Open-Source Button -->
-                    <div class="open-source-button">
+                    <div class="open-source-button"
+                        onclick="window.open('https://github.com/beyluta/PedroPortfolio', '_blank')">
                         <p
                             style="font-family: 'Muli', sans-serif; color: white; font-size: 14px; position: absolute; top: 22%;left: 50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
                             Source</p>
@@ -214,7 +215,7 @@
                         <span style="color: #007BFF; font-weight: bolder">✓ </span>Made using Javascript</p>
                     <p style="font-family: 'Muli', sans-serif; color: dimgray; text-align: left; margin-left: 25px">
                         <span style="color: #007BFF; font-weight: bolder">✓ </span>Made using JQuery</p>
-                    <div class="demo-button">
+                    <div class="demo-button" onclick="webNotAvailable()">
                         <p
                             style="font-family: 'Muli', sans-serif; color: white; font-size: 14px; position: absolute; top: 22%;left: 50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
                             Visit Website</p>
@@ -310,6 +311,10 @@
     <a href="#top-header"><img class="up-arrow"
             style="position: fixed; left: 0; bottom: 0; margin-left: 25px; margin-bottom: 25px;" src="css/imgs/up.png"
             width="50px"></a>
+
+
+    <div id="unavailable-div" style="display: none; background-color:#007BFF; position: fixed; padding: 20px 0px;
+    top:0; left: 0; right: 0;"><span style="color: white; font-family: 'Muli', sans-serif; margin: 0px; padding: 0px;"><center>This Site Seems to be Unavailable...</center></span></div>
 </body>
 
 </html>
